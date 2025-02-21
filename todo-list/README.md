@@ -5,7 +5,7 @@ A simple todo list application to practice and improve my javascript skills
 This project helps me strengthen my understanding of DOM manipulation, especially in event handling and local storage in Javascript
 
 # Screenshot
-![Todo-list](/images/output.png)
+![Todo-list](images/output.png)
 
 # Features
 - Add, edit, delete tasks
