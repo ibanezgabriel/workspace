@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*::before, *::after, * {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Poppins";
+}
+
+body {
+  color: #ff4500;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, rgb(61, 61, 249), rgb(233, 68, 68));
+}
+
+#todo-list {
+  max-width: 550px;
+  width: 100%;
+  background-color: white;
+  padding: clamp(1rem, 2.5vw, 1.5rem);
+  border-radius: 0.5rem;
+}
+#todo-list h1 {
+  display: flex;
+  align-items: center;
+}
+#todo-list img {
+  margin-left: 0.5rem;
+}
+#todo-list #add-task-container {
+  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  display: flex;
+}
+#todo-list #add-task-container #input-box {
+  width: 70%;
+  height: 2rem;
+  padding: 1rem;
+  margin-right: clamp(0.5rem, 2.5vw, 1rem);
+  border: 2px solid #ff4500;
+  border-radius: 0 1rem 0 1rem;
+  color: #ff4500;
+}
+#todo-list #add-task-container #input-button {
+  flex: 1;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #ff4500;
+  border-radius: 0.5rem;
+  color: white;
+}
+#todo-list #list-container {
+  margin: 0.5rem 0;
+}
+#todo-list #list-container .checked {
+  color: rgb(144, 144, 144);
+  text-decoration: line-through;
+}
+#todo-list #list-container .checked::before {
+  background-image: url(/images/checked.png);
+}
+#todo-list li {
+  margin: 1rem;
+  cursor: pointer;
+  position: relative;
+  list-style: none;
+  padding-left: 3rem;
+}
+#todo-list li::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  top: 0.09rem;
+  left: 0;
+  background-image: url(/images/unchecked.png);
+  background-position: center;
+  background-size: cover;
+}
+#todo-list .close {
+  content: "";
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 0.2rem;
+  right: 0;
+  background-image: url(/images/close.png);
+  background-size: cover;
+}
+
+/*# sourceMappingURL=output.css.map */
