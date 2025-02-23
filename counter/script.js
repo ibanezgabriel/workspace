@@ -17,7 +17,7 @@ btn.forEach((btn)=>{
                 count = 0;
             }
             if (count === 0) {
-                countEl.style.color = "white";
+                countEl.style.color = "rgb(193, 193, 193)";
             } else {
                 countEl.style.color = "rgb(7, 207, 0)";
             }
