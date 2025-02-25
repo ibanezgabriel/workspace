@@ -1,0 +1,78 @@
+@import "reset.css";
+@import "variables.css";
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(34,193,195);
+    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+    main {
+        display: flex;
+        flex-direction: column;
+        max-height: 30rem;
+        max-width: 20rem;
+        height: 100%;
+        width: 100%;
+        border-radius: 1rem;
+        overflow: hidden;
+        background-color: var(--primary-color);
+        #info {
+            height: auto;
+            background-color: #25282bcc;
+            #title {
+                color: var(--text-color);
+                font-family: var(--ff);
+                text-transform: uppercase;
+                padding: .8rem 0 .5rem 1rem;
+            }
+        }
+        #display {
+            height: 20%;
+            color: var(--text-color);
+            font-family: monospace;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-end;
+            padding: 0rem 1rem .5rem 0;
+            #output, #calculation {
+                font-size: calc(var(--fs) * 2.2);
+            }
+        }
+        #line {
+            height: .2rem;
+            width: 100%;
+            background-color: var(--text-color);
+        }
+        #keyboard {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: .5rem .6rem;
+            background-color: #252728;
+            padding: 1rem;
+            .number {
+                background-color: #533d27;
+            }
+            .quaternary {
+                background-color: #857c6a;
+            }
+            .equal {
+                background: linear-gradient(#ea9315, #f1d780);
+            }
+            button {
+                color: var(--text-color);
+                font-weight: 700;
+                font-size: calc(var(--fs) * 1.5);
+                border-radius: .5rem;
+                background-color: var(--secondary-color);
+            }
+            button:hover {
+                opacity: 0.7;
+                transition: 200ms ease-in;
+            }
+        }
+    }
+}
+
