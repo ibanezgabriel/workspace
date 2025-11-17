@@ -76,6 +76,10 @@ body {
         background-position: center;
         background-size: cover;
     }
+    .checked {
+        color: rgb(144, 144, 144);
+        text-decoration: line-through;
+    }
     .checked::before {
         background-image: url(icons/checked.png);
     }
